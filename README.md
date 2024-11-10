@@ -12,6 +12,6 @@ El proyecto se compone fundamentalmente de las siguientes clases:
 - **HistorialAdapter:** Adaptador para mostrar los elementos del historial en HistorialFragment.
 - **MedicacionAdapter:** Adaptador para mostrar los elementos de medicación en MedicacionFragment.
 - **Historial y Medicacion:** Modelos de datos para representar las entradas de historial y medicación, respectivamente.
-## Flujo de funcionamiento de la aplicación:
-
+## Flujo y funcionamiento de la aplicación:
+https://github.com/itsedupablo/Historial_Medico_Personal_Android/tree/main/Flujo%20de%20la%20App
 
