@@ -13,5 +13,5 @@ El proyecto se compone fundamentalmente de las siguientes clases:
 - **MedicacionAdapter:** Adaptador para mostrar los elementos de medicación en MedicacionFragment.
 - **Historial y Medicacion:** Modelos de datos para representar las entradas de historial y medicación, respectivamente.
 ## Flujo y funcionamiento de la aplicación:
-https://github.com/itsedupablo/Historial_Medico_Personal_Android/tree/main/Flujo%20de%20la%20App
+#### https://github.com/itsedupablo/Historial_Medico_Personal_Android/tree/main/Flujo%20de%20la%20App
 
