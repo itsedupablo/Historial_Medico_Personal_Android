@@ -1,14 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Opción de Consultas -->
     <item
         android:id="@+id/navigation_consultas"
         android:icon="@drawable/ic_consultas"
-        android:title="Consultas" />
+        android:title="@string/consultas" />
+
+    <!-- Opción de Recetas -->
     <item
         android:id="@+id/navigation_recetas"
         android:icon="@drawable/ic_recetas"
-        android:title="Recetas" />
+        android:title="@string/recetas" />
+
+    <!-- Opción de Resultados -->
     <item
         android:id="@+id/navigation_resultados"
         android:icon="@drawable/ic_resultados"
-        android:title="Resultados" />
+        android:title="@string/resultados" />
+
 </menu>

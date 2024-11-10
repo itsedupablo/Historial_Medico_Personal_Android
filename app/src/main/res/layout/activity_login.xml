@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="24dp"
+    tools:ignore="ExtraText">
+
+    <!-- Logo o nombre de la app -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_app_logo"/>
+
+    <!-- Campo de correo electrónico -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/light_gray"
+        android:padding="12dp"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/light_gray"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/light_gray"
+        android:padding="12dp"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/light_gray"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón de inicio de sesión -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesion"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Texto de registro -->
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_tengo_cuenta"
+        android:textColor="@color/primary"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
