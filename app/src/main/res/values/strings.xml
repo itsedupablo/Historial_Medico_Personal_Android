@@ -7,4 +7,5 @@
     <string name="no_tengo_cuenta">¿No tienes cuenta? Regístrate</string>
     <string name="password">Contraseña</string>
     <string name="email">Correo electrónico</string>
+    <string name="bienvenida">Bienvenido a tu historial médico personal</string>
 </resources>
