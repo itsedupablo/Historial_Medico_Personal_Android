@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">Historial Medico Personal</string>
-    <string name="recetas">Recetas</string>
-    <string name="resultados">Resultados</string>
-    <string name="consultas">Consultas</string>
     <string name="iniciar_sesion">Iniciar Sesión</string>
     <string name="no_tengo_cuenta">¿No tienes cuenta? Regístrate</string>
     <string name="password">Contraseña</string>
     <string name="email">Correo electrónico</string>
-    <string name="bienvenida">Bienvenido a tu historial médico personal</string>
+    <string name="texto_inicio">Últimas noticias médicas</string>
+    <string name="medicacion">Medicación</string>
+    <string name="historial">Historial</string>
+    <string name="medicacion_titulo">Medicación Recetada</string>
+    <string name="historial_titulo">Historial Médico</string>
+    <string name="resultado">Resultado</string>
+    <string name="fecha">Fecha</string>
+    <string name="nombre_prueba">Nombre de la Prueba</string>
+    <string name="frecuencia">Frecuencia</string>
+    <string name="dosis">Dosis</string>
+    <string name="nombre_del_medicamento">Nombre del Medicamento</string>
+    <string name="registrarse">Registrarse</string>
 </resources>

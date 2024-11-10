@@ -1,71 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/white"
-    android:padding="24dp">
+    android:padding="16dp"
+    android:gravity="center">
 
-    <!-- Logo o nombre de la app -->
     <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/ic_app_logo"/>
+        android:id="@+id/logo_image"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="100dp"
+        android:src="@drawable/ic_app_logo" />
 
-    <!-- Campo de correo electrónico -->
-    <EditText
-        android:id="@+id/emailEditText"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"
-        android:backgroundTint="@color/light_gray"
-        android:padding="12dp"
-        android:textColor="@color/dark_gray"
-        android:textColorHint="@color/light_gray"
-        android:drawableStart="@drawable/ic_email"
-        android:drawablePadding="10dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginTop="-98dp"
+        android:hint="@string/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@android:color/darker_gray">
 
-    <!-- Campo de contraseña -->
-    <EditText
-        android:id="@+id/passwordEditText"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:backgroundTint="@color/light_gray"
-        android:padding="12dp"
-        android:textColor="@color/dark_gray"
-        android:textColorHint="@color/light_gray"
-        android:drawableStart="@drawable/ic_password"
-        android:drawablePadding="10dp"
-        android:layout_marginBottom="24dp"/>
-
-    <!-- Botón de inicio de sesión -->
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
-        android:textAllCaps="false"
-        android:backgroundTint="@color/primary"
-        android:textColor="@color/white"
-        android:paddingVertical="12dp"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Texto de registro -->
-    <TextView
-        android:id="@+id/registerTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta? Regístrate"
-        android:textColor="@color/primary"
+        android:hint="@string/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginTop="16dp"
+        app:boxStrokeColor="@android:color/darker_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesion"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@android:color/white"
+        app:cornerFamily="rounded"
+        app:cornerSize="16dp"
         android:textStyle="bold"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@android:color/white"
+        app:cornerFamily="rounded"
+        app:cornerSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/no_tengo_cuenta"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"/>
 </LinearLayout>

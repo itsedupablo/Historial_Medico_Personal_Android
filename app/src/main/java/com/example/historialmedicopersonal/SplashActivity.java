@@ -3,24 +3,30 @@ package com.example.historialmedicopersonal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
+
+    private static final String TAG = "SplashActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Usamos un Handler para hacer que espere 2 segundos antes de abrir la MainActivity
-        new Handler().postDelayed(new Runnable() {
+        Log.d(TAG, "SplashActivity started");
+
+        // Navegar a LoginActivity después de un retraso
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Una vez pasado el tiempo, iniciamos la MainActivity
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Log.d(TAG, "Navigating to LoginActivity");
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
-                finish(); // Cierra la SplashActivity para que no pueda volver atrás
+                finish();
             }
-        }, 2000); // 2000 milisegundos = 2 segundos
+        }, 2000); // 2 segundos de retraso
     }
 }
